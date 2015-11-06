@@ -1,7 +1,7 @@
 我看单元测试
 -------------
 
-谢@walter邀, 来介绍一下我这些年写单元测试的体验. 大家可以来[GitHub Page](https://github.com/WalterInSH/unit-testing)提提自己的看法 !
+谢@walter邀, 来介绍一下我这些年写单元测试的体验. 大家可以来[GitHub Page](https://github.com/WalterInSH/unit-testing)提提自己的看法 !  也欢迎参观[我的Blog](http://zhwbqd.github.io/)
 
 ### 为什么要写单元测试?
 
