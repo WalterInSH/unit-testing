@@ -22,4 +22,12 @@ public class Method {
     public static Object returnsNull() {
         return null;
     }
+
+    public static void onlyAcceptPositiveNum(int param) {
+        if(param == 0){
+            throw new IllegalArgumentException("0 is not acceptable");
+        }else if(param <0) {
+            throw new IllegalArgumentException("negative num is not acceptable");
+        }
+    }
 }
