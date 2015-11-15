@@ -3,7 +3,7 @@ package io.github.walterinsh;
 import org.testng.annotations.Test;
 
 /**
- * How to assert method which expected throws an exception?
+ * How to assert methods which expected throws an exception?
  *
  * "expectedExceptions" is the answer!
  *
