@@ -1,5 +1,6 @@
-package io.github.walterinsh;
+package io.github.walterinsh.basic;
 
+import io.github.walterinsh.SharedClass;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

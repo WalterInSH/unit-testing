@@ -1,4 +1,4 @@
-package io.github.walterinsh;
+package io.github.walterinsh.basic;
 
 import org.testng.annotations.*;
 

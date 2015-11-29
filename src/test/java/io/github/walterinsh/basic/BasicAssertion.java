@@ -1,5 +1,6 @@
-package io.github.walterinsh;
+package io.github.walterinsh.basic;
 
+import io.github.walterinsh.Method;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
