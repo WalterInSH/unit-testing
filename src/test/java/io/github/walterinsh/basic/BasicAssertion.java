@@ -18,7 +18,7 @@ public class BasicAssertion {
 
     @Test
     public void exampleOne() throws Exception {
-        Assert.assertNotNull(Method.returnsNull());
+        Assert.assertNull(Method.returnsNull());
         
         Assert.assertTrue(Method.returnsTrue());
         Assert.assertFalse(!Method.returnsTrue());
@@ -29,7 +29,7 @@ public class BasicAssertion {
 
     @Test
     public void useStaticImport() throws Exception {
-        assertNotNull(Method.returnsNull());
+        assertNull(Method.returnsNull());
 
         assertTrue(Method.returnsTrue());
         assertFalse(!Method.returnsTrue());
