@@ -10,28 +10,37 @@ import static org.mockito.Mockito.verify;
 import static org.testng.Assert.assertEquals;
 
 /**
+ * Sometimes we need to know what were passed to a method. Are the parameters really what you expected?
+ * ArgumentCaptor is something can help.
+ *
  * Created by Walter on 12/4/15.
  */
 public class TrackParameter {
 
+    /**
+     * We are going to verify we really passed the right parameter to the class.
+     * This is a little weird on the sample. We'll see some real world examples later on.
+     * But first I want to demonstrate the syntax.
+     *
+     * @throws Exception
+     */
     @Test
     public void trackParam() throws Exception {
-        ArgumentCaptor<Integer> captor = ArgumentCaptor.forClass(Integer.class);
-        CharSequence argument = mock(CharSequence.class);
+        ArgumentCaptor<CharSequence> captor = ArgumentCaptor.forClass(CharSequence.class);
+        TargetClass targetClass = mock(TargetClass.class);
 
-        new TargetClass().targetMethod(argument);
+        targetClass.targetMethod("parameter");
 
-        verify(argument).subSequence(captor.capture(), captor.capture());
+        verify(targetClass).targetMethod(captor.capture());
 
-        List<Integer> capturedValues = captor.getAllValues();
-        assertEquals(capturedValues.get(0).intValue(), 1);
-        assertEquals(capturedValues.get(1).intValue(), 4);
+        List<CharSequence> capturedValues = captor.getAllValues();
+        assertEquals(capturedValues.get(0), "parameter");
     }
 
     class TargetClass {
 
         public void targetMethod(CharSequence argument) {
-            argument.subSequence(1, 4);
+
         }
     }
 
