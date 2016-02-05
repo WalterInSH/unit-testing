@@ -10,6 +10,5 @@ public class HttpServiceTest {
     @Test
     public void httpRequest() throws Exception {
 
-
     }
 }
