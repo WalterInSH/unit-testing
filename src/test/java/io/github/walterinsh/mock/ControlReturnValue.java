@@ -7,7 +7,6 @@ import org.mockito.stubbing.Answer;
 import org.testng.annotations.Test;
 
 import static org.mockito.Matchers.anyString;
-import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.when;
 import static org.testng.Assert.assertEquals;
 

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import java.net.SocketTimeoutException;
 
 import static org.mockito.Mockito.*;
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 /**
  * Test keys:
