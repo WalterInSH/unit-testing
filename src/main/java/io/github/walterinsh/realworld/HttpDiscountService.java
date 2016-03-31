@@ -8,6 +8,6 @@ import java.net.SocketTimeoutException;
 public class HttpDiscountService {
 
     public float getDiscountFromRemoteService() throws SocketTimeoutException {
-
+        return 0.5f;
     }
 }
