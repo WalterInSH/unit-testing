@@ -9,6 +9,12 @@ import static org.mockito.Mockito.*;
 import static org.testng.Assert.*;
 
 /**
+ * Test keys:
+ * 1. Illegal parameter
+ * 2. Normal procedure
+ * 3. Network disconnected
+ * 4. Network unstable
+ *
  * Created by Walter on February/4/16.
  */
 public class SuperMarketTest {
@@ -16,12 +22,12 @@ public class SuperMarketTest {
     @Test(expectedExceptions = IllegalArgumentException.class,
             expectedExceptionsMessageRegExp = "invalid product id")
     public void testIllegalProductId() throws Exception {
-        new SuperMarket().buy(-1);
+        new SuperMarket().checkout(-1);
     }
 
     @Test
     public void testNormalProcedure() throws Exception {
-        float price = new SuperMarket().buy(10);
+        float price = new SuperMarket().checkout(10);
 
         // 10 * 3.5 / 2 = 17.5
         assertEquals(price, 17.5f);
@@ -35,7 +41,7 @@ public class SuperMarketTest {
 
         when(mockedHttpDiscountService.getDiscountFromRemoteService()).thenThrow(new SocketTimeoutException());
 
-        float price = superMarket.buy(10);
+        float price = superMarket.checkout(10);
 
         // 10 * 3.5 * 1 = 35
         assertEquals(price, 35f);
@@ -52,7 +58,7 @@ public class SuperMarketTest {
                 .thenThrow(new SocketTimeoutException())
                 .thenCallRealMethod();
 
-        float price = superMarket.buy(10);
+        float price = superMarket.checkout(10);
 
         // 10 * 3.5 * 0.5 = 17.5
         assertEquals(price, 17.5f);
