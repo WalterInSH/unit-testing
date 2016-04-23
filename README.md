@@ -24,6 +24,8 @@ Unit Testing
 
 [BasicAssertion.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/BasicAssertion.java) 演示如何写基本的断言
 
+[GoogleTruth.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/GoogleTruth.java) 演示如何使用Google Truth框架增强断言的可读性
+
 [AssertAnException.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/AssertAnException.java) 演示如何断言异常
 
 [SetUpAndTearDown.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/SetUpAndTearDown.java) 演示如何准备和结束单元测试
