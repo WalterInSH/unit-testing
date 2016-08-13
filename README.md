@@ -50,7 +50,7 @@ Unit Testing
 
 [LoadSpringContext.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/spring/LoadSpringContext.java) 演示如何和Spring集成,加载Spring上下文
 
-[SpringProxyClassMock.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/spring/SpringProxyClassMock.java) 补充一个spring AOP测试的坑
+[SpringProxyClassMock.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/spring/SpringProxyClassMock.java) 补充一个spring AOP测试中,如何应对代理类的mock
 
 
 ##综合运用
