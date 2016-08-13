@@ -24,13 +24,15 @@ Unit Testing
 
 [BasicAssertion.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/BasicAssertion.java) 演示如何写基本的断言
 
-[GoogleTruth.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/GoogleTruth.java) 演示如何使用Google Truth框架增强断言的可读性
-
 [AssertAnException.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/AssertAnException.java) 演示如何断言异常
 
 [SetUpAndTearDown.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/SetUpAndTearDown.java) 演示如何准备和结束单元测试
 
 [UsePriority.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/UsePriority.java) 演示如何控制单元测试的执行顺序
+
+###可读性提升
+
+[GoogleTruth.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/readability/GoogleTruth.java) 演示如何使用Google Truth框架增强断言的可读性
 
 ###使用Mock
 
@@ -43,6 +45,13 @@ Unit Testing
 [TrackInvocation.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/TrackInvocation.java) 演示如何为Mock出来的对象写断言，验证对象被调用的次数
 
 [TrackParameter.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/TrackParameter.java) 演示如何抓取被Mock对象接收的参数
+
+###和Spring 集成
+
+[LoadSpringContext.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/spring/LoadSpringContext.java) 演示如何和Spring集成,加载Spring上下文
+
+[SpringProxyClassMock.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/spring/SpringProxyClassMock.java) 补充一个spring AOP测试的坑
+
 
 ##综合运用
 
