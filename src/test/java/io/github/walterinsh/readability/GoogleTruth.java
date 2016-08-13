@@ -1,4 +1,4 @@
-package io.github.walterinsh.basic;
+package io.github.walterinsh.readability;
 
 import io.github.walterinsh.Method;
 import org.testng.annotations.Test;
