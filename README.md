@@ -46,6 +46,12 @@ Unit Testing
 
 [TrackParameter.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/TrackParameter.java) 演示如何抓取被Mock对象接收的参数
 
+###WireMock
+
+WireMock 可以在本地启动Http server, 伪装成你依赖的第三方服务. 对于一些复杂场景或者不便于Mock的代码, WireMock是个不错的选择
+
+[UserWireMock.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/wiremock/UserWireMock.java) 演示如何使用WireMock
+
 ###和Spring 集成
 
 [LoadSpringContext.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/spring/LoadSpringContext.java) 演示如何和Spring集成,加载Spring上下文

@@ -18,7 +18,7 @@ import static org.testng.Assert.assertEquals;
  *
  * Created by Walter on 8/21/16.
  */
-public class HttpAPIServiceTest {
+public class UserWireMock {
 
     WireMockServer wireMockServer;
 
