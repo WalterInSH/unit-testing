@@ -14,6 +14,7 @@ public class HttpAPIService {
 
     public String requestData() throws Exception {
         try {
+            //Note: you cannot easily mock the Request
             return Request.Get(apiUrl)
                     .execute().returnContent().asString();
         } catch (Exception e) {

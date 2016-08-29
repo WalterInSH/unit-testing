@@ -58,6 +58,9 @@ WireMock 可以在本地启动Http server, 伪装成你依赖的第三方服务.
 
 [SpringProxyClassMock.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/spring/SpringProxyClassMock.java) 补充一个spring AOP测试中,如何应对代理类的mock
 
+###使用H2内存数据库
+
+[StudentDaoTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/springh2/StudentDaoTest.java) 演示如何使用H2内存数据库进行单元测试
 
 ##综合运用
 
