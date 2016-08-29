@@ -6,7 +6,10 @@
                         http://www.springframework.org/schema/beans/spring-beans-3.2.xsd   http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 
     <jdbc:embedded-database id="dataSource" type="H2">
+        <!--schema file defines your tables-->
         <jdbc:script location="classpath:springh2/h2_schema.sql"/>
+
+        <!--test data file initialize your testing environment, insert rows you need -->
         <jdbc:script location="classpath:springh2/h2_test_data.sql"/>
     </jdbc:embedded-database>
 
