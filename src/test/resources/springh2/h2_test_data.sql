@@ -1,0 +1,1 @@
+INSERT INTO student(name) VALUES('Jim'),('Jade');
