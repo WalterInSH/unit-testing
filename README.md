@@ -34,6 +34,12 @@ Unit Testing
 
 [GoogleTruth.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/readability/GoogleTruth.java) 演示如何使用Google Truth框架增强断言的可读性
 
+###Behavior-driven development(BDD)
+
+除了最被人熟知的TDD, 行为驱动测试(BDD)也是十分流行
+
+[StringReverserStory.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/bdd/StringReverserStory.java) 演示结合Jbehave进行行为驱动测试.
+
 ###使用Mock
 
 有时我们希望验证程序在某些特殊场景下是否正常执行, 例如网络异常(我们不可能在每次测试的时候拔网线),这个时候Mock框架就派上了用场. Mock框架可以在单元测试中模拟出各种情况,并提供丰富的断言,让我们对代码在复查场景下的表现也胸有成竹
