@@ -3,7 +3,8 @@ Meta:
 
 Narrative:
 I want to design a string reverser with a special feature.
-It's able to return the uppercase
+It's able to return the uppercase result.
+So it saves my time.
 
 Scenario: need uppercase
 Given create a reverser need uppercase true
