@@ -20,19 +20,19 @@ Unit Testing
 
 首先介绍一下单元测试的基础, 这些东西不复杂,但却是被用到最多的东西. 优秀的单元测试都是由最基础的东西组成的.
 
-[CommonWrongWays.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/CommonWrongWays.java) 演示一些常见的测试误区
+[CommonWrongWaysTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/CommonWrongWaysTest.java) 演示一些常见的测试误区
 
-[BasicAssertion.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/BasicAssertion.java) 演示如何写基本的断言
+[BasicAssertionTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/BasicAssertionTest.java) 演示如何写基本的断言
 
-[AssertAnException.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/AssertAnException.java) 演示如何断言异常
+[AssertAnExceptionTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/AssertAnExceptionTest.java) 演示如何断言异常
 
-[SetUpAndTearDown.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/SetUpAndTearDown.java) 演示如何准备和结束单元测试
+[SetUpAndTearDownTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/SetUpAndTearDownTest.java) 演示如何准备和结束单元测试
 
-[UsePriority.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/UsePriority.java) 演示如何控制单元测试的执行顺序
+[UsePriorityTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/UsePriorityTest.java) 演示如何控制单元测试的执行顺序
 
 ###可读性提升
 
-[GoogleTruth.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/readability/GoogleTruth.java) 演示如何使用Google Truth框架增强断言的可读性
+[GoogleTruthTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/readability/GoogleTruthTest.java) 演示如何使用Google Truth框架增强断言的可读性
 
 ###Behavior-driven development(BDD)
 
@@ -44,25 +44,25 @@ Unit Testing
 
 有时我们希望验证程序在某些特殊场景下是否正常执行, 例如网络异常(我们不可能在每次测试的时候拔网线),这个时候Mock框架就派上了用场. Mock框架可以在单元测试中模拟出各种情况,并提供丰富的断言,让我们对代码在复查场景下的表现也胸有成竹
 
-[ControlReturnValue.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/ControlReturnValue.java) 演示如何使用Mock控制返回值
+[ControlReturnValueTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/ControlReturnValueTest.java) 演示如何使用Mock控制返回值
 
-[ThrowAnException.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/ThrowAnException.java) 演示如何使用Mock抛出一个异常
+[ThrowAnExceptionTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/ThrowAnExceptionTest.java) 演示如何使用Mock抛出一个异常
 
-[TrackInvocation.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/TrackInvocation.java) 演示如何为Mock出来的对象写断言，验证对象被调用的次数
+[TrackInvocationTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/TrackInvocationTest.java) 演示如何为Mock出来的对象写断言，验证对象被调用的次数
 
-[TrackParameter.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/TrackParameter.java) 演示如何抓取被Mock对象接收的参数
+[TrackParameterTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/TrackParameterTest.java) 演示如何抓取被Mock对象接收的参数
 
 ###WireMock
 
 WireMock 可以在本地启动Http server, 伪装成你依赖的第三方服务. 对于一些复杂场景或者不便于Mock的代码, WireMock是个不错的选择
 
-[UserWireMock.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/wiremock/UserWireMock.java) 演示如何使用WireMock
+[UserWireMockTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/wiremock/UserWireMockTest.java) 演示如何使用WireMock
 
 ###和Spring 集成
 
-[LoadSpringContext.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/spring/LoadSpringContext.java) 演示如何和Spring集成,加载Spring上下文
+[LoadSpringContextTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/spring/LoadSpringContextTest.java) 演示如何和Spring集成,加载Spring上下文
 
-[SpringProxyClassMock.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/spring/SpringProxyClassMock.java) 补充一个spring AOP测试中,如何应对代理类的mock
+[SpringProxyClassMockTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/spring/SpringProxyClassMockTest.java) 补充一个spring AOP测试中,如何应对代理类的mock
 
 ###使用H2内存数据库
 

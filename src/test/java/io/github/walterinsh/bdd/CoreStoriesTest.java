@@ -17,7 +17,7 @@ import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
 /**
  * Created by Walter on 16-8-30.
  */
-public class CoreStories extends JUnitStories {
+public class CoreStoriesTest extends JUnitStories {
 
     @Override
     public Configuration configuration() {
