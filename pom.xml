@@ -1,3 +1,10 @@
+<!--
+By default, the Surefire Plugin will automatically include all test classes with the following wildcard patterns:
+
+"**/Test*.java" - includes all of its subdirectories and all Java filenames that start with "Test".
+"**/*Test.java" - includes all of its subdirectories and all Java filenames that end with "Test".
+"**/*TestCase.java" - includes all of its subdirectories and all Java filenames that end with "TestCase".
+-->
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
