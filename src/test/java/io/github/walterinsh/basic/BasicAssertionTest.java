@@ -14,7 +14,7 @@ import static org.testng.Assert.*;
  *
  * Created by Walter on 11/4/15.
  */
-public class BasicAssertion {
+public class BasicAssertionTest {
 
     @Test
     public void exampleOne() throws Exception {

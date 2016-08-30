@@ -18,7 +18,7 @@ import static org.testng.Assert.*;
  * Created by Walter on 8/13/16.
  */
 @ContextConfiguration(locations = "classpath:spring/application-context.xml")
-public class SpringProxyClassMock extends AbstractTestNGSpringContextTests{
+public class SpringProxyClassMockTest extends AbstractTestNGSpringContextTests{
 
     @Autowired
     private AOPSpringBean bean;

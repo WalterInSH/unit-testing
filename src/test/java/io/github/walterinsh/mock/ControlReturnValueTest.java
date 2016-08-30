@@ -18,7 +18,7 @@ import static org.testng.Assert.assertEquals;
  * We use mockito to demonstrate.
  * Created by Walter on 11/29/15.
  */
-public class ControlReturnValue {
+public class ControlReturnValueTest {
     /**
      * Originally, target method always returns " ".
      * @throws Exception
@@ -45,7 +45,7 @@ public class ControlReturnValue {
         assertEquals(targetClass.targetMethod(""), "A");
 
         //we can rewrite the code by changing the order of when part and return part
-        Mockito.doReturn("B").when(targetClass.targetMethod(""));
+        Mockito.doReturn("B").when(targetClass).targetMethod("");
         assertEquals(targetClass.targetMethod(""), "B");
     }
 

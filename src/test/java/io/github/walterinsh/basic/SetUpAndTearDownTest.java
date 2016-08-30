@@ -24,7 +24,7 @@ import org.testng.annotations.*;
  *
  * Created by Walter on 11/22/15.
  */
-public class SetUpAndTearDown {
+public class SetUpAndTearDownTest {
 
     @BeforeClass
     public void beforeClass() throws Exception {

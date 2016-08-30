@@ -9,7 +9,7 @@ import static org.mockito.Mockito.*;
  * important under some circumstances. It helps us to know what really happened underlying.
  * Created by Walter on 12/2/15.
  */
-public class TrackInvocation {
+public class TrackInvocationTest {
 
     /**
      * With Mockito.verify() and some special asserts(times, atLeast, atMost, never), we can reinforce our unit tests.

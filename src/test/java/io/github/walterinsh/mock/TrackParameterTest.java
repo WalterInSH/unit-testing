@@ -15,7 +15,7 @@ import static org.testng.Assert.assertEquals;
  *
  * Created by Walter on 12/4/15.
  */
-public class TrackParameter {
+public class TrackParameterTest {
 
     /**
      * We are going to verify we really passed the right parameter to the class.

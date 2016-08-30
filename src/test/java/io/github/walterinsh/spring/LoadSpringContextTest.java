@@ -14,7 +14,7 @@ import static org.testng.Assert.assertNotNull;
  * Created by Walter on 8/13/16.
  */
 @ContextConfiguration(locations = "classpath:spring/application-context.xml")
-public class LoadSpringContext extends AbstractTestNGSpringContextTests{
+public class LoadSpringContextTest extends AbstractTestNGSpringContextTests{
 
     @Autowired
     private SpringBean bean;

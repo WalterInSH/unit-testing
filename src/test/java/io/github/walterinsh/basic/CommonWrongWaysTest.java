@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
  *
  * Created by Walter on 11/1/15.
  */
-public class CommonWrongWays {
+public class CommonWrongWaysTest {
     /**
      * Only printing your test results is not good enough.
      *

@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
  *
  * Created by Walter on 11/8/15.
  */
-public class AssertAnException {
+public class AssertAnExceptionTest {
 
     /**
      * If not throwing an exception means this method works fine.

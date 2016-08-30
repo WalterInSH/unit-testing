@@ -13,7 +13,7 @@ import static org.mockito.Mockito.doThrow;
  *
  * Created by Walter on 11/29/15.
  */
-public class ThrowAnException {
+public class ThrowAnExceptionTest {
 
     /**
      * Now, let's pretend that our code calls a remote api, we want to test bad network situation.

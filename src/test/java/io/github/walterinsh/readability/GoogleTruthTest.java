@@ -15,7 +15,7 @@ import static com.google.common.truth.Truth.assertThat;
  * 获取更多关于Google Truth: http://google.github.io/truth/
  * Created by Walter on 4/23/16.
  */
-public class GoogleTruth {
+public class GoogleTruthTest {
 
     @Test
     public void assertNull() throws Exception {

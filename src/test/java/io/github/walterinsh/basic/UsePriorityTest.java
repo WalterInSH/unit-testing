@@ -19,7 +19,7 @@ import static org.testng.Assert.assertEquals;
  *
  * Created by Walter on 11/15/15.
  */
-public class UsePriority {
+public class UsePriorityTest {
 
     @Test(priority = 1)
     public void testOne() throws Exception {
