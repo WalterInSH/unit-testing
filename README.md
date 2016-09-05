@@ -26,6 +26,8 @@ Unit Testing
 
 [AssertAnExceptionTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/AssertAnExceptionTest.java) 演示如何断言异常
 
+[DataProviderTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/DataProviderTest.java) 演示如何为同一个测试准备多份测试数据
+
 [SetUpAndTearDownTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/SetUpAndTearDownTest.java) 演示如何准备和结束单元测试
 
 [UsePriorityTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/UsePriorityTest.java) 演示如何控制单元测试的执行顺序
