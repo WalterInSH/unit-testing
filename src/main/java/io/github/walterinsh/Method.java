@@ -1,5 +1,8 @@
 package io.github.walterinsh;
 
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.math.NumberUtils;
+
 /**
  * Util class for showing unit testing
  *
@@ -28,6 +31,12 @@ public class Method {
             throw new IllegalArgumentException("0 is not acceptable");
         }else if(param <0) {
             throw new IllegalArgumentException("negative num is not acceptable");
+        }
+    }
+
+    public static void onlyAcceptNumberString(String str) {
+        if (!NumberUtils.isNumber(str)) {
+            throw new IllegalArgumentException("only number strings are acceptable");
         }
     }
 }
