@@ -8,15 +8,15 @@ Unit Testing
 整个项目还在搭建中，欢迎大家参与进来:-)
 
 
-##故事
+## 故事
 
 [Stories](https://github.com/WalterInSH/unit-testing/tree/master/stories)目录下，列举了一些和单元测试的故事,讲述大家对单元测试的认识,你可以添加你自己的故事。例如你是如何一步步学习UT的。
 
-##如何阅读
+## 如何阅读
 
 [Method.java](https://github.com/WalterInSH/unit-testing/blob/master/src/main/java/io/github/walterinsh/Method.java) & [SharedClass.java](https://github.com/WalterInSH/unit-testing/blob/master/src/main/java/io/github/walterinsh/SharedClass.java) 是两个辅助类，帮助之后的演示
 
-###基础
+### 基础
 
 首先介绍一下单元测试的基础, 这些东西不复杂,但却是被用到最多的东西. 优秀的单元测试都是由最基础的东西组成的.
 
@@ -32,11 +32,11 @@ Unit Testing
 
 [UsePriorityTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/basic/UsePriorityTest.java) 演示如何控制单元测试的执行顺序
 
-###可读性提升
+### 可读性提升
 
 [GoogleTruthTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/readability/GoogleTruthTest.java) 演示如何使用Google Truth框架增强断言的可读性
 
-###Behavior-driven development(BDD)
+### Behavior-driven development(BDD)
 
 除了最被人熟知的TDD, 行为驱动测试(BDD)也是十分流行
 
@@ -54,23 +54,23 @@ Unit Testing
 
 [TrackParameterTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/TrackParameterTest.java) 演示如何抓取被Mock对象接收的参数
 
-###WireMock
+### WireMock
 
 WireMock 可以在本地启动Http server, 伪装成你依赖的第三方服务. 对于一些复杂场景或者不便于Mock的代码, WireMock是个不错的选择
 
 [UserWireMockTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/wiremock/UserWireMockTest.java) 演示如何使用WireMock
 
-###和Spring 集成
+### 和Spring 集成
 
 [LoadSpringContextTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/spring/LoadSpringContextTest.java) 演示如何和Spring集成,加载Spring上下文
 
 [SpringProxyClassMockTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/spring/SpringProxyClassMockTest.java) 补充一个spring AOP测试中,如何应对代理类的mock
 
-###使用H2内存数据库
+### 使用H2内存数据库
 
 [StudentDaoTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/springh2/StudentDaoTest.java) 演示如何使用H2内存数据库进行单元测试
 
-##综合运用
+## 综合运用
 
 也许每个知识点里的例子你都看懂了,但是却不知道该在什么时候用这些知识. 让我们通过更贴近现实的场景温习一下这些知识点.
 
