@@ -50,6 +50,8 @@ Unit Testing
 
 [ThrowAnExceptionTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/ThrowAnExceptionTest.java) 演示如何使用Mock抛出一个异常
 
+[MockVSSpyTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/MockVSSpyTest.java) 演示mock和spy的区别
+
 [TrackInvocationTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/TrackInvocationTest.java) 演示如何为Mock出来的对象写断言，验证对象被调用的次数
 
 [TrackParameterTest.java](https://github.com/WalterInSH/unit-testing/blob/master/src/test/java/io/github/walterinsh/mock/TrackParameterTest.java) 演示如何抓取被Mock对象接收的参数

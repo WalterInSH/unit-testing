@@ -9,6 +9,9 @@ import static org.mockito.Mockito.*;
 import static org.testng.Assert.assertEquals;
 
 /**
+ * There's a very similar method called spy(). Sometimes you can use it as mock(), sometimes not.
+ * Basically spy() does not thoroughly mock your class. It calls the target's real method when you don't
+ * give a "when()". But it's different when you spy an interface.
  * Created by Walter on 16-9-12.
  */
 public class MockVSSpyTest {
@@ -25,6 +28,11 @@ public class MockVSSpyTest {
         assertEquals(spiedObject.sayHello(), "Hi");
     }
 
+    /**
+     * Since an interface doesn't have a real method. Thus you cannot call its real method.
+     * If you call a mocked interface's method, it returns null.
+     * @throws Exception
+     */
     @Test
     public void testInterface() throws Exception {
         Service mockedObject = mock(Service.class);
@@ -38,8 +46,13 @@ public class MockVSSpyTest {
         assertEquals(spiedObject.sayHello(), null);
     }
 
+    /**
+     * When you mock an interface(or a Class), you can specify a default Answer as well, which
+     * handles interactions you do not declare.
+     * @throws Exception
+     */
     @Test
-    public void testInterfaceWithDefaultAnwser() throws Exception {
+    public void testInterfaceWithDefaultAnswer() throws Exception {
         Service mockedObject = mock(Service.class, AdditionalAnswers.delegatesTo(new ServiceImpl()));
 
         assertEquals(mockedObject.sayHello(), "hello world");
